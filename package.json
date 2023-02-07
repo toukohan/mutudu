@@ -1,0 +1,23 @@
+{
+  "name": "mutudu",
+  "version": "1.0.0",
+  "description": "Mutual To Do app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toukohan/mutudu.git"
+  },
+  "author": "toukohan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toukohan/mutudu/issues"
+  },
+  "homepage": "https://github.com/toukohan/mutudu#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1"
+  }
+}
