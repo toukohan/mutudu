@@ -4,7 +4,9 @@
   "description": "Mutual To Do app",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,15 @@
   },
   "homepage": "https://github.com/toukohan/mutudu#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "express": "^4.18.2",
-    "mongoose": "^6.9.1"
+    "express-session": "^1.17.3",
+    "mongoose": "^6.9.1",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.4.2",
+    "nodemon": "^2.0.20"
   }
 }

@@ -1,9 +1,12 @@
 const mongoose = require("mongoose");
 const { TaskSchema } = require("./Task");
-const { GroupSchema } = require("./Group");
+const { Group } = require("./Group");
 
 const UserSchema = new mongoose.Schema({
-  name: String,
+  name: {
+    type: String,
+    required: true,
+  },
   email: {
     type: String,
     unique: true,
@@ -13,9 +16,19 @@ const UserSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
-  password: String,
+  password: {
+    type: String,
+    required: true,
+  },
+  groups: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Group",
+    },
+  ],
   tasks: [TaskSchema],
-  groups: [GroupSchema],
 });
 
-module.exports = mongoose.model("User", UserSchema);
+const User = mongoose.model("User", UserSchema);
+
+module.exports = { User, UserSchema };

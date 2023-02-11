@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutudu</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Hello, this is Mutudu</h1>
+    <div class="new-user">
+        <h2>Create a user</h2>
+        <form action="/new-user" method="post">
+            <input type="text" name="name">
+            <br>
+            <input type="email" name="email">
+            <br>
+            <input type="password" name="password">
+            <br>
+            <button type="submit">Register user</button>
+
+        </form>
+    </div>
+    <div class="new-task">
+        <h2>Create a Task</h2>
+        <form action="/new-task" method="post">
+            <input type="text" name="user">
+            <br>
+            <input type="text" name="title">
+            <br>
+            <input type="text" name="description">
+            <br>
+
+            <button type="submit">Add task</button>
+
+        </form>
+    </div>
+    <div class="new-group">
+        <h2>Create a Group</h2>
+        <form action="/new-group" method="post">
+            Username:
+            <input type="text" user="user">
+            <br>
+            Group name:
+            <input type="text" name="name">
+            <br>
+            <button type="submit">Create group</button>
+
+        </form>
+    </div>
+    <div class="new-group-task">
+        <h2>Create a Group Task</h2>
+        <form action="/new-group-task" method="post">
+            <input type="text" name="name">
+            <br>
+            <input type="text" name="title">
+            <br>
+            <input type="text" name="description">
+            <br>
+
+            <button type="submit">Add task</button>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
